@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="382dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/currency" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="202dp"
+        android:layout_marginRight="202dp"
+        android:layout_marginBottom="48dp"
+        android:text="enter the amount you want to convert"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="392dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="enter amount in £"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:layout_marginBottom="437dp"
+        android:onClick="convertCurrency"
+        android:text="Convert!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
